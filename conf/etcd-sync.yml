@@ -1,0 +1,20 @@
+master:
+  fixedConfigs:
+  - key: /com/xiongyingqi
+  prefixConfigs:
+  - key: /com/x
+  rangeConfigs:
+  - key: /com/a
+    endKey: /com/c
+  etcdconfig:
+    endpoints:
+    - http://127.0.0.1:12379
+    TimeoutSeconds: 10
+slaves:
+- endpoints:
+  - "http://127.0.0.1:22379"
+  TimeoutSeconds: 3
+- endpoints:
+  - "http://127.0.0.1:32379"
+  TimeoutSeconds: 3
+

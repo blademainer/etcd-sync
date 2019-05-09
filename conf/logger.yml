@@ -1,0 +1,5 @@
+Level: DEBUG
+#FileName: logs/server.log
+MaxBackups: 5
+MaxSize: 100MB
+MaxAge: 0
